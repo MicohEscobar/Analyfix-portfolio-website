@@ -18,11 +18,16 @@
     <section class="services">
         <h1>What we offer</h1>
         <div class="service-item">
-            <h3>Data Analysis and Visualization</h3>
-            <p>Extracting valuable insights from data and presenting them visually.</p>
+        <a href="data_analysis.php">
+                <h3>Data Analysis and Visualization</h3>  
+        </a>
+                <p>Extracting valuable insights from data and presenting them visually.</p>
+          
         </div>
         <div class="service-item">
+        <a href="predictive_modelling.php">
             <h3>Predictive Modeling</h3>
+        </a>
             <p>Using machine learning to forecast future trends and make predictions.</p>
         </div>
         <div class="service-item">
