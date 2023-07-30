@@ -110,9 +110,9 @@
         <li class="dropdown">
           <a href="services.php">Services</a>
           <ul class="dropdown-content">
-            <li><a href="#">Service 1</a></li>
-            <li><a href="#">Service 2</a></li>
-            <li><a href="#">Service 3</a></li>
+            <li><a href="predictive_modelling.php">Predictive Modelling</a></li>
+            <li><a href="data_cleaning.php">Data Cleaning</a></li>
+            <li><a href="big_data.php">Big Data</a></li>
           </ul>
         </li>
         <li class="dropdown">
