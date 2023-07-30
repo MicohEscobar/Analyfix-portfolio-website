@@ -30,12 +30,17 @@
         </a>
             <p>Using machine learning to forecast future trends and make predictions.</p>
         </div>
+        
         <div class="service-item">
+        <a href= "data_cleaning.php">
             <h3>Data Cleaning and Preprocessing</h3>
+        </a>
             <p>Ensuring data quality and integrity for accurate analysis.</p>
         </div>
         <div class="service-item">
+        <a href=big_data.php>
             <h3>Big Data Analytics</h3>
+        </a>
             <p>Analyzing large-scale datasets for actionable insights.</p>
         </div>
     </section>
