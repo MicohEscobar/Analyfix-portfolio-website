@@ -11,7 +11,7 @@
   <?php include 'header.php'; ?>
 
   <section class="services">
-    <h4>Our Services</h4>
+    <h1>What we offer</h1>
     <div class="service-item">
       <h3>Data Analysis and Visualization</h3>
       <p>Extracting valuable insights from data and presenting them visually.</p>
