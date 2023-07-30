@@ -12,7 +12,7 @@
 
   <section class="services">
     <h4>Our Services</h4>
-    <div class="service-item">Data Science Consultancy
+    <div class="service-item">
       <h3>Data Analysis and Visualization</h3>
       <p>Extracting valuable insights from data and presenting them visually.</p>
     </div>

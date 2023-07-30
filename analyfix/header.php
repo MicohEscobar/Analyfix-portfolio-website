@@ -5,7 +5,7 @@
       <p>Empowering businesses with data-driven solutions</p>
     </div>
     <div class="dashboard-image">
-      <img src="ana.jpg" alt="Dashboard Image">
+      <img src="plc.jpg" alt="Dashboard Image">
     </div>
   </div>
 </header>
