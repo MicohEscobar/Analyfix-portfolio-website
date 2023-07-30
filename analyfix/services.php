@@ -7,6 +7,7 @@
     <title>Services - AnalyFix</title>
     <!-- Link your CSS file if you have one for this page -->
     <!-- <link rel="stylesheet" href="path/to/your/css/file.css"> -->
+    <link rel="stylesheet" href="home_css.css">
 </head>
 
 <body>
