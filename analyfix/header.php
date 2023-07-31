@@ -134,6 +134,32 @@
         <img src="plc.jpg" alt="Dashboard Image">
       </div>
     </div>
+    <div class="social-buttons">
+            <a href="#" target="_blank">
+                <img src="fb.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com/your_page_url" target="_blank">
+                <img src="twtr.png" alt="Twitter">
+            </a>
+        </div>
+        <style>
+        /* Add this CSS for positioning the buttons */
+        .social-buttons {
+            position: absolute;
+            top: 15px; /* Adjust the top position as needed */
+            right: 15px; /* Adjust the right position as needed */
+        }
+
+        .social-buttons a {
+            display: inline-block;
+            margin-right: 6px; /* Add some space between the buttons */
+        }
+
+        .social-buttons img {
+            width: 40px; /* Adjust the icon size as needed */
+            height: 40px;
+        }
+    </style>
   </header>
 </body>
 </html>
