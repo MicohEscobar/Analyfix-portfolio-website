@@ -42,47 +42,51 @@
       color: #fff;
     }
 
-    /* Dropdown styles */
-    .header-nav ul.dropdown-content {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #f9f9f9;
-      border: 1px solid #ccc;
-      padding: 0;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
-    }
+  /* Dropdown styles */
+.header-nav ul.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333; /* Change the background color */
+  padding: 0;
+  margin: 0;
+  border: none;
+  /* box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); /* Remove box shadow */
+}
 
-    .header-nav li:hover ul.dropdown-content {
-      display: block;
-    }
+.header-nav li:hover ul.dropdown-content {
+  display: block;
+}
 
-    .header-nav li.dropdown li {
-      display: block;
-    }
+.header-nav li.dropdown li {
+  display: block;
+}
 
-    .header-nav li.dropdown li a {
-      padding: 10px;
-      color: #333;
-      text-decoration: none;
-      display: block;
-    }
+.header-nav li.dropdown li a {
+  padding: 10px;
+  color: #fff; /* Change the text color */
+  text-decoration: none;
+  display: block;
+  font-family: Arial, sans-serif; /* Change the font family */
+}
 
-    .header-nav li.dropdown li a:hover {
-      background-color: #f2f2f2;
-    }
+.header-nav li.dropdown li a:hover {
+  background-color: #555; /* Change the background color on hover */
+}
 
-    /* Additional styles for better appearance */
-    .header-nav li.dropdown:hover > a {
-      background-color: #333; /* Change the background color of the main link on hover */
-      color: #fff;
-    }
+/* Additional styles for better appearance */
+.header-nav li.dropdown:hover > a {
+  background-color: #555; /* Change the background color of the main link on hover */
+  color: #fff;
+}
 
-    .header-nav li.dropdown li:last-child a {
-      border-bottom-left-radius: 5px; /* Round the bottom left corner of the last item in the dropdown */
-      border-bottom-right-radius: 5px; /* Round the bottom right corner of the last item in the dropdown */
-    }
+.header-nav li.dropdown li:last-child a {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
 
     .dashboard-container {
       display: flex;

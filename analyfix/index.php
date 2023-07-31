@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AnalyFix</title>
   <link rel="stylesheet" href="home_css.css">
+  <style>
+        /* Add this CSS to change the color of linked titles */
+        .header-nav a {
+            color:  /* Replace #FF4500 with the desired color code */
+        }
+    </style>
   <?php include 'header.php'; ?>
 </head>
 <body>
