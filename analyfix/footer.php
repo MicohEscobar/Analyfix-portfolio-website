@@ -14,5 +14,4 @@
             <button type="submit">Subscribe</button>
         </form>
     </div>
-</footer><form method="post" action="subscribe.php">
-        <input type="email" name="email" placeholder="Your Email" required>
+</footer>
