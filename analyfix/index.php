@@ -16,10 +16,7 @@
 <body>
   
 
-  
-    </div>
-    <a class="cta-btn" href="#contact">Contact Us</a>
-  </section>
+
 
   <section id="contact">
     <h2>Contact Us</h2>

@@ -142,7 +142,7 @@
             <a href="#" target="_blank">
                 <img src="fb.png" alt="Facebook">
             </a>
-            <a href="https://www.twitter.com/your_page_url" target="_blank">
+            <a href="https://twitter.com/i/communities/1669501013441806336" target="_blank">
                 <img src="twtr.png" alt="Twitter">
             </a>
         </div>

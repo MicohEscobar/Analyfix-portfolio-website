@@ -1,15 +1,12 @@
 <?php
-$servername = 'localhost';
-$username = getenv('DB_USERNAME'); // Use environment variable for username
-$password = getenv('DB_PASSWORD'); // Use environment variable for password
-$dbname = 'micoh';
-$table = 'subscribe';
+// Include the configuration file
+require_once 'config.php';
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
 // Check connection
 if ($conn->connect_error) {
@@ -17,17 +14,43 @@ if ($conn->connect_error) {
 }
 
 // Check if the database exists and select it
-if (!mysqli_select_db($conn, $dbname)) {
+if (!mysqli_select_db($conn, DB_NAME)) {
     die("Database selection failed: " . mysqli_error($conn));
 }
 
+
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = $_POST["email"];
-    $company = $_POST["company"];
+    $name = $_POST["name"]; // Changed variable name to 'name'
+    if ($_SERVER["REQUEST_METHOD"] === "POST") {
+        $email = isset($_POST["email"]) ? $_POST["email"] : "";
+        $name = isset($_POST["name"]) ? $_POST["name"] : "";
+    
+        // Check if both email and name are not empty
+        if (!empty($email) && !empty($name)) {
+            // Prepare and bind the statement
+            $stmt = $conn->prepare("INSERT INTO " . TABLE_NAME . " (email, name) VALUES (?, ?)");
+            $stmt->bind_param("ss", $email, $name);
+    
+            // Execute the statement
+            if ($stmt->execute()) {
+                echo "Subscription successful!";
+            } else {
+                echo "Error: " . $stmt->error;
+            }
+    
+            // Close the statement
+            $stmt->close();
+        } else {
+            echo "Error: Email and name cannot be empty.";
+        }
+    }
+    
 
     // Prepare and bind the statement
-    $stmt = $conn->prepare("INSERT INTO $table (email, company) VALUES (?, ?)");
-    $stmt->bind_param("ss", $email, $company);
+    $stmt = $conn->prepare("INSERT INTO " . TABLE_NAME . " (email, name) VALUES (?, ?)");
+    $stmt->bind_param("ss", $email, $name); // Changed variable name to 'name'
 
     // Execute the statement
     if ($stmt->execute()) {
