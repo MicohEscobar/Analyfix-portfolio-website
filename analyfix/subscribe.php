@@ -18,49 +18,28 @@ if (!mysqli_select_db($conn, DB_NAME)) {
     die("Database selection failed: " . mysqli_error($conn));
 }
 
-
-
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $email = $_POST["email"];
-    $name = $_POST["name"]; // Changed variable name to 'name'
-    if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        $email = isset($_POST["email"]) ? $_POST["email"] : "";
-        $name = isset($_POST["name"]) ? $_POST["name"] : "";
-    
-        // Check if both email and name are not empty
-        if (!empty($email) && !empty($name)) {
-            // Prepare and bind the statement
-            $stmt = $conn->prepare("INSERT INTO " . TABLE_NAME . " (email, name) VALUES (?, ?)");
-            $stmt->bind_param("ss", $email, $name);
-    
-            // Execute the statement
-            if ($stmt->execute()) {
-                echo "Subscription successful!";
-            } else {
-                echo "Error: " . $stmt->error;
-            }
-    
-            // Close the statement
-            $stmt->close();
+    $email = isset($_POST["email"]) ? $_POST["email"] : "";
+    $name = isset($_POST["name"]) ? $_POST["name"] : "";
+
+    // Check if both email and name are not empty
+    if (!empty($email) && !empty($name)) {
+        // Prepare and bind the statement
+        $stmt = $conn->prepare("INSERT INTO " . TABLE_NAME . " (email, name) VALUES (?, ?)");
+        $stmt->bind_param("ss", $email, $name);
+
+        // Execute the statement
+        if ($stmt->execute()) {
+            echo "Subscription successful!";
         } else {
-            echo "Error: Email and name cannot be empty.";
+            echo "Error: " . $stmt->error;
         }
-    }
-    
 
-    // Prepare and bind the statement
-    $stmt = $conn->prepare("INSERT INTO " . TABLE_NAME . " (email, name) VALUES (?, ?)");
-    $stmt->bind_param("ss", $email, $name); // Changed variable name to 'name'
-
-    // Execute the statement
-    if ($stmt->execute()) {
-        echo "Subscription successful!";
+        // Close the statement
+        $stmt->close();
     } else {
-        echo "Error: " . $stmt->error;
+        echo "Error: Email and name cannot be empty.";
     }
-
-    // Close the statement
-    $stmt->close();
 }
 
 // Close the connection
