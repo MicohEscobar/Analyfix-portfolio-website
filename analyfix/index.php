@@ -11,7 +11,9 @@
             color:  /* Replace #FF4500 with the desired color code */
         }
     </style>
+    <header>
   <?php include 'header.php'; ?>
+      </header>
 </head>
 <body>
   
@@ -23,7 +25,7 @@
     <!-- Add your contact form or contact information here -->
   </section>
 
-  <?php include 'footer.php'; ?>
+ 
   
   <script>
      // Smooth scroll to the Contact section when clicking on the "Contact Us" button
@@ -33,6 +35,6 @@
       contactSection.scrollIntoView({ behavior: 'smooth' });
     });
   </script>
-  </script>
+  </script> <?php include 'footer.php'; ?>
 </body>
 </html>

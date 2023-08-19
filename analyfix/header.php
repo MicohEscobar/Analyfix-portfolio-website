@@ -2,9 +2,13 @@
 <html>
 <head>
   <style>
-    header {
+    header { 
+      background-image: url('map.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
       text-align: center;
-      padding: 20px;
+      padding: 90px;
     }
 
     .header-nav {
@@ -48,7 +52,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #333; /* Change the background color */
+  background-color: white; /* Change the background color */
   padding: 0;
   margin: 0;
   border: none;
@@ -86,24 +90,43 @@
   border-bottom-right-radius: 5px;
 }
 
-
-
-    .dashboard-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
     .dashboard-info {
       flex: 1;
       text-align: center;
     }
 
-    .dashboard-image {
+    *.dashboard-image {
       flex: 1;
       text-align: center;
     }
+     /* New styles for the title overlay */
+     .dashboard-container {
+      position: relative;
+      display: flex; /* Use flexbox for alignment */
+      width: 100%; /* Make the container span the full width */
+      overflow: hidden; /* Hide any overflow */
+    }
+
+    .dashboard-title {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2em;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      left: 20px; /* Adjust as needed for horizontal alignment */
+    }
+
+    .dashboard-image {
+      flex: 1; /* Allow the image to take up remaining space */
+    }
+
+    .dashboard-image img {
+      width: 100%; /* Make the image span the full width */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style>
   </style>
 </head>
 <body>
@@ -128,14 +151,16 @@
           </ul>
         </li>
       </ul>
+      
     </nav>
     <div class="dashboard-container">
-      <div class="dashboard-info">
-        <h1>AnalyFix</h1>
-        <p>Empowering businesses with data-driven solutions</p>
-      </div>
+
       <div class="dashboard-image">
-        <img src="plc.jpg" alt="Dashboard Image">
+        
+      </div>
+      <div class="dashboard-info">
+        <h1 text-align: center>AnalyFix</h1>
+        <p>Empowering businesses with data-driven solutions</p>
       </div>
     </div>
     <div class="social-buttons">

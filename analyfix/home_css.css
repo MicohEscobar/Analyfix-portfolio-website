@@ -9,7 +9,36 @@ body {
     color: #fff;
     padding: 40px;
   }
-  
+  .header-nav ul.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  .header-nav li:hover ul.dropdown-content {
+    display: block;
+  }
+
+  .header-nav li.dropdown li {
+    display: block;
+  }
+
+  .header-nav li.dropdown li a {
+    padding: 10px;
+    color: white; /* Change the text color to white */
+    text-decoration: none;
+    display: block;
+    font-family: Arial, sans-serif;
+  }
+
+  .header-nav li.dropdown li a:hover {
+    background-color: #555;
+  }
   .dashboard-container {
     display: flex;
     flex-wrap: wrap;

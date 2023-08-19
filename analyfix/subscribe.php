@@ -16,6 +16,7 @@ if ($conn->connect_error) {
 // Check if the database exists and select it
 if (!mysqli_select_db($conn, DB_NAME)) {
     die("Database selection failed: " . mysqli_error($conn));
+    $subscriptionMessage = "";
 }
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {

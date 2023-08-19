@@ -3,6 +3,7 @@
         <h3>Stay Updated</h3>
         <p>Subscribe to our newsletter for the latest data science insights.</p>
         <form action="subscribe.php" id="subscribe-form" method="POST">
+            
             <div>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
@@ -13,5 +14,6 @@
             </div>
             <button type="submit">Subscribe</button>
         </form>
+        <?php echo $subscriptionMessage; ?>
     </div>
 </footer>
