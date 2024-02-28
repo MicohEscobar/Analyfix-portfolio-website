@@ -1,9 +1,9 @@
 
-
+php?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AnalyFix</title>
+    <title>Consolution - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
 
     <link rel="stylesheet" href="css/aos.css">
-
 
     <link rel="stylesheet" href="css/ionicons.min.css">
     
@@ -515,20 +514,6 @@
   <script src="js/main.js"></script>
     
   </body>
-==
- 
-  
-  <script>
-     // Smooth scroll to the Contact section when clicking on the "Contact Us" button
-     document.querySelector('.cta-btn').addEventListener('click', function (event) {
-      event.preventDefault();
-      const contactSection = document.getElementById('contact');
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    });
-  </script>
-  </script> <?php include 'footer.php'; ?>
-</body>
->>>>>>> origin/main
 </html>
 ?>
 
